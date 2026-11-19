@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /brands
+Allow: /categories
+Allow: /discoveries
+Allow: /offers
+Allow: /products
+Allow: /register
+Allow: /terms
+Allow: /track-order
+Allow: /cart
+Allow: /checkout
+Allow: /profile
+
+# Block admin and private areas
+Disallow: /admin
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://kashafa.com/sitemap.xml
