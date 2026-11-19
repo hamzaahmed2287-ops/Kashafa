@@ -1,0 +1,31 @@
+/* --- ملف التنسيقات العامة الأساسي لموقع كشافة --- */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  background-color: #F5F2EC;
+  color: #20232B;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* منع خروج الصور أو العناصر عن حدود الشاشة */
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ضبط الجداول لتكون متجاوبة */
+table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}

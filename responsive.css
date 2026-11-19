@@ -1,0 +1,77 @@
+/* ================================================= */
+/* 📱 إعدادات الموبايل فقط (أقل من 768px) */
+/* ================================================= */
+@media (max-width: 768px) {
+  /* إظهار شريط القائمة المبسط للموبايل */
+  .mobile-top-bar {
+    display: flex !important;
+  }
+
+  /* إخفاء الهيدر الأصلي الضخم على الموبايل لكي لا يسبب زحمة */
+  .site-header {
+    padding: 10px 14px !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .site-header .header-right-actions .track-order-link {
+    display: none !important;
+  }
+
+  /* إخفاء شريط الصفحات العادي وإظهاره فقط عند فتح القائمة */
+  .main-nav-bar {
+    display: none !important;
+    flex-direction: column !important;
+    background-color: #F5F2EC !important;
+    padding: 15px 20px !important;
+    border-bottom: 1px solid #DAD8D2;
+    gap: 12px !important;
+  }
+
+  .main-nav-bar.mobile-open {
+    display: flex !important;
+  }
+
+  .main-nav-bar a {
+    font-size: 1rem !important;
+    padding: 6px 0;
+    border-bottom: 1px solid #EAE6DF;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ================================================= */
+/* 💻 إعدادات الكمبيوتر (أكبر من 769px) - ثابتة كما كانت تماماً */
+/* ================================================= */
+@media (min-width: 769px) {
+  .mobile-top-bar {
+    display: none !important;
+  }
+
+  .main-nav-bar {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
+
+/* ========================================================== */
+/* 📱 تظبيط صفحة تفاصيل البراند للموبايل والتابلت (< 768px) */
+/* ========================================================== */
+@media (max-width: 768px) {
+  .brand-detail-container {
+    padding: 20px 14px !important;
+  }
+
+  .brand-detail-container h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .brand-card-box {
+    padding: 20px !important;
+    gap: 16px !important;
+  }
+
+  .brand-card-box h1 {
+    font-size: 1.3rem !important;
+  }
+}
